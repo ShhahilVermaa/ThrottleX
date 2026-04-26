@@ -38,3 +38,13 @@ async def health_check():
         "service": "ThrottleX",
         "redis": redis_status
     }
+
+@router.get("/")
+async def root():
+    return {
+        "service": "ThrottleX",
+        "version": "1.0.0",
+        "description": "Distributed Rate Limiting System",
+        "docs": "/docs",
+        "health": "/health"
+    }
