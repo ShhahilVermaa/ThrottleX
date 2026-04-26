@@ -9,8 +9,9 @@ redis_pool = aioredis.ConnectionPool(
     host=os.getenv("REDIS_HOST", "localhost"),
     port=int(os.getenv("REDIS_PORT", 6379)),
     db=int(os.getenv("REDIS_DB", 0)),
+    password=os.getenv("REDIS_PASSWORD", None),  # ← add this line
     max_connections=20,
-    decode_responses=True   # returns strings, not bytes
+    decode_responses=True
 )
 
 def get_redis_client() -> aioredis.Redis:
