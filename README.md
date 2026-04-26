@@ -10,6 +10,10 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
 ---
+## 🌐 Live Demo
+- **API Base URL:** https://throttlex-production.up.railway.app
+- **Swagger Docs:** https://throttlex-production.up.railway.app/docs
+- **Health Check:** https://throttlex-production.up.railway.app/health
 
 ## 📌 Overview
 
